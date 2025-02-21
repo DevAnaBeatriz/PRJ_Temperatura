@@ -2,7 +2,10 @@
   "version": 2,
   "builds": [
     { "src": "api/weather.js", "use": "@vercel/node" },
-    { "src": "index.html", "use": "@vercel/static" }
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "css/styles.css", "use": "@vercel/static" },
+    { "src": "js/script.js", "use": "@vercel/static" },
+    { "src": "data/cityData.json", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/api/weather", "dest": "/api/weather.js" },
